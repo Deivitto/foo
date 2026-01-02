@@ -82,6 +82,7 @@ export default function Eval({ fetchId }: EvalOptions) {
    * @param {boolean} isBackgroundUpdate - Whether this is a background update (e.g., from socket) that shouldn't show loading state
    * @returns {Boolean} Whether the eval was loaded successfully.
    */
+  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional
   const loadEvalById = useCallback(
     async (id: string, isBackgroundUpdate = false) => {
       try {
@@ -171,6 +172,7 @@ export default function Eval({ fetchId }: EvalOptions) {
     return () => unsubscribe();
   }, [setSearchParams]);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional
   useEffect(() => {
     const _searchParams = new URLSearchParams(window.location.search);
 
