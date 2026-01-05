@@ -4,6 +4,36 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.120.10](https://github.com/promptfoo/promptfoo/compare/0.120.9...0.120.10) (2026-01-05)
+
+
+### Features
+
+* **evaluator:** enrich error results with provider context and metadata ([#6913](https://github.com/promptfoo/promptfoo/issues/6913)) ([a004182](https://github.com/promptfoo/promptfoo/commit/a0041825b8149e94d25828a43b77787896ba8dc6))
+* **providers:** add Azure AI Foundry video provider (Sora) ([#6890](https://github.com/promptfoo/promptfoo/issues/6890)) ([1479e74](https://github.com/promptfoo/promptfoo/commit/1479e7481a61476145e307d0b1a10994f6fc1e9d))
+* **providers:** add Google Veo video generation provider ([#6707](https://github.com/promptfoo/promptfoo/issues/6707)) ([ec7de98](https://github.com/promptfoo/promptfoo/commit/ec7de9855b737a8051290525498a7a303ab735e0))
+* **providers:** add OpenAI Sora video generation provider ([#6698](https://github.com/promptfoo/promptfoo/issues/6698)) ([a4589bb](https://github.com/promptfoo/promptfoo/commit/a4589bbf6cdea9333b87c5ac6e33a2b6b63a3992))
+* **webui:** remove MUI dependencies, complete migration to Radix/Tailwind ([#6868](https://github.com/promptfoo/promptfoo/issues/6868)) ([62ba798](https://github.com/promptfoo/promptfoo/commit/62ba79823d5262b0a06404ada1021fd21a8a6281))
+
+
+### Bug Fixes
+
+* **app:** fix ErrorBoundary dark mode styling ([#6893](https://github.com/promptfoo/promptfoo/issues/6893)) ([9c5d595](https://github.com/promptfoo/promptfoo/commit/9c5d595757f3dce72711b148ae17146e74d50d22))
+* **app:** fix Tailwind CSS variable syntax and React infinite render loop ([#6908](https://github.com/promptfoo/promptfoo/issues/6908)) ([d60e222](https://github.com/promptfoo/promptfoo/commit/d60e2228e7c64e144459b9d97a024eb16ea46674))
+* **app:** pointer cursor on eval setup steps ([#6897](https://github.com/promptfoo/promptfoo/issues/6897)) ([879e62c](https://github.com/promptfoo/promptfoo/commit/879e62ccba1c5022f63d07d58aa88479ba78d625))
+* **app:** prevent duplicate fail reasons in eval results carousel ([#6916](https://github.com/promptfoo/promptfoo/issues/6916)) ([9ac7176](https://github.com/promptfoo/promptfoo/commit/9ac7176dd830d09bae5fafe7067adc460b930645))
+* **app:** update banner z-index to render below navigation dropdowns ([#6887](https://github.com/promptfoo/promptfoo/issues/6887)) ([750afd7](https://github.com/promptfoo/promptfoo/commit/750afd7f70732d1eede5b8ad68a553209ca7830f))
+* **ci:** add code-scan-action to CODEOWNERS ([#6894](https://github.com/promptfoo/promptfoo/issues/6894)) ([ee4aa3c](https://github.com/promptfoo/promptfoo/commit/ee4aa3cf9d6d3bbcf497b43472b1aa66b8d65439))
+* **ci:** increase claude-review max-turns from 10 to 30 ([#6922](https://github.com/promptfoo/promptfoo/issues/6922)) ([c9b94d4](https://github.com/promptfoo/promptfoo/commit/c9b94d4f2553b34de420ebb900c6797793723a23))
+* **cloud:** check PROMPTFOO_API_KEY env var in cloudConfig ([#6896](https://github.com/promptfoo/promptfoo/issues/6896)) ([6fea2fc](https://github.com/promptfoo/promptfoo/commit/6fea2fcca5c6c67bf1e9bb012d9347d67ab41191))
+* **esm:** suppress spurious error logs during config file discovery ([#6891](https://github.com/promptfoo/promptfoo/issues/6891)) ([10214cc](https://github.com/promptfoo/promptfoo/commit/10214cc24a1c264b40aeab4eaed8ed61db5127ca))
+* **evaluator:** respect provider-supplied latencyMs for cached responses ([#6911](https://github.com/promptfoo/promptfoo/issues/6911)) ([6cd5d39](https://github.com/promptfoo/promptfoo/commit/6cd5d3936774501629febac9fa9f8dc97f32b228))
+* **providers:** sanitize JSON Schema for Gemini MCP tool compatibility ([#6904](https://github.com/promptfoo/promptfoo/issues/6904)) ([fcda531](https://github.com/promptfoo/promptfoo/commit/fcda5318d6d5cd4aef1351d5e18df7458475b854))
+* **redteam:** prevent nunjucks error on template syntax in attack prompts ([#6888](https://github.com/promptfoo/promptfoo/issues/6888)) ([ec6698d](https://github.com/promptfoo/promptfoo/commit/ec6698d027e32f8040bfc4f8ccfb5547df6f43a6))
+* **server:** resolve update banner state bugs in version endpoint ([#6895](https://github.com/promptfoo/promptfoo/issues/6895)) ([18277f2](https://github.com/promptfoo/promptfoo/commit/18277f2b2f5b67ef8248fc590073d5fe6553bfa3))
+* **test:** resolve flaky google live provider test ([#6886](https://github.com/promptfoo/promptfoo/issues/6886)) ([ac8f78f](https://github.com/promptfoo/promptfoo/commit/ac8f78ffc1e9039e2f84454a07a0f8c470ce12c0))
+* **webui:** Reports table navigation to report ([#6917](https://github.com/promptfoo/promptfoo/issues/6917)) ([2ae27ba](https://github.com/promptfoo/promptfoo/commit/2ae27ba488a100bc52cd4d354dbfea8e87b23968))
+
 ## [0.120.9](https://github.com/promptfoo/promptfoo/compare/0.120.8...0.120.9) (2025-12-30)
 
 ### Features
